@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoR2RemoveAllyLimit", "RoR2RemoveAllyLimit\RoR2RemoveAllyLimit.csproj", "{B72EAA36-07A6-4034-BFE8-F0499D30E515}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoR2RemoveAllyCap", "RoR2RemoveAllyLimit\RoR2RemoveAllyCap.csproj", "{B72EAA36-07A6-4034-BFE8-F0499D30E515}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
