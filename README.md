@@ -1,7 +1,7 @@
 # Remove Ally Cap
 ## By Basil
 
-A mod that **removes** ally caps!
+A mod that **removes** the default ally cap and allows custom caps!
 
 If you haven't noticed, the Backup Drone equipment isn't usable if you have over 25 allies! This mod helps remove that and relive the dream of spamming Backup Drones!
 
