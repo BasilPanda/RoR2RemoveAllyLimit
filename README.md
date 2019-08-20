@@ -30,6 +30,10 @@ AllyCountCap = 25
 
 ## Changelog
 
+**v1.0.1**
+
+- Updated to most recent R2API
+
 **v1.0.0**
 
 - Default ally cap of 25 is removed and theoretically set to infinity!

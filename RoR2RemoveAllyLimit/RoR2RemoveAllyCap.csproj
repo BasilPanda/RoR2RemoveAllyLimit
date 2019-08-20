@@ -13,6 +13,7 @@
     </Reference>
     <Reference Include="Assembly-CSharp.R2API.mm">
       <HintPath>H:\SteamLibrary\steamapps\common\Risk of Rain 2\BepInEx\monomod\Assembly-CSharp.R2API.mm.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="BepInEx">
       <HintPath>H:\SteamLibrary\steamapps\common\Risk of Rain 2\BepInEx\core\BepInEx.dll</HintPath>

@@ -6,7 +6,7 @@ using RoR2;
 namespace RoR2RemoveAllyCap
 {
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.Basil.RemoveAllyCap", "RemoveAllyCap", "1.0.0")]
+    [BepInPlugin("com.Basil.RemoveAllyCap", "RemoveAllyCap", "1.0.1")]
     public class RAC : BaseUnityPlugin
     {
         public static ConfigWrapper<bool> RemoveCap;
