@@ -32,11 +32,11 @@ AllyCountCap = 25
 
 **v1.0.1**
 
-- Updated to most recent R2API
+- Updated to Skills 2.0 Patch!
 
 **v1.0.0**
 
-- Default ally cap of 25 is removed and theoretically set to infinity!
+- Default ally cap is removed and theoretically set to infinity!
 - Allowed custom ally caps w/ CustomCap setting (default to	25)
 
 ## My Other Mods

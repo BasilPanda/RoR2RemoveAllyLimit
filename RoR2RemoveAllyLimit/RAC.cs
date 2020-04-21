@@ -1,30 +1,33 @@
 ﻿using System;
 using BepInEx;
 using BepInEx.Configuration;
+using HarmonyLib;
 using RoR2;
 
 namespace RoR2RemoveAllyCap
 {
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.Basil.RemoveAllyCap", "RemoveAllyCap", "1.0.1")]
+    [BepInPlugin("com.Basil.RemoveAllyCap", "RemoveAllyCap", "1.0.3")]
     public class RAC : BaseUnityPlugin
     {
-        public static ConfigWrapper<bool> RemoveCap;
-        public static ConfigWrapper<string> AllyCountCap;
+        public static ConfigEntry<bool> RemoveCap;
+        public static ConfigEntry<string> AllyCountCap;
 
         public void InitConfig()
         {
-            RemoveCap = Config.Wrap(
+            RemoveCap = Config.Bind(
                 "Settings",
                 "RemoveCap",
-                "Removes the default ally cap if true and sets it to theoretically infinity.",
-                true);
+                true,
+                "Removes the default ally cap if true and sets it to theoretically infinity."
+                );
 
-            AllyCountCap = Config.Wrap(
+            AllyCountCap = Config.Bind(
                "Settings",
                "AllyCountCap",
-               "Sets the max number of allies you can have. This will only work if RemoveCap is set to false.",
-               "25");
+               "20",
+               "Sets the max number of allies you can have. This will only work if RemoveCap is set to false."
+               );
         }
 
         public static float ConfigToFloat(string configline)
@@ -39,8 +42,16 @@ namespace RoR2RemoveAllyCap
         public void Awake()
         {
             InitConfig();
+            try
+            {
+                Harmony harmony = new Harmony("RAC");
+                harmony.PatchAll();
 
-            Hooks.main();
+            }
+            catch (Exception ex)
+            {
+                FileLog.Log("Overall Patcher " + ex.Message);
+            }
         }
         
     }
